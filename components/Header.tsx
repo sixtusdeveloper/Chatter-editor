@@ -18,8 +18,8 @@ const Header = ({ children, className }: HeaderProps) => {
          <Image 
           src="/assets/images/logo.png"
           alt="Logo on small screen"
-          width={100}
-          height={35}
+          width={125}
+          height={36}
           className='mr-2 md:hidden'
          />
        </Link>

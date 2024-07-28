@@ -1,7 +1,7 @@
-import React from 'react';
-import { useState } from 'react';
+'use client';
+
 import Image from 'next/image';
-import { User } from 'lucide-react';
+import React, { useState } from 'react'
 import UserTypeSelector from './UserTypeSelector';
 import { Button } from './ui/button';
 import { removeCollaborator, updateDocumentAccess } from '@/lib/actions/room.actions';
