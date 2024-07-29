@@ -2,7 +2,7 @@ import { SignUp } from '@clerk/nextjs';
 
 const SignUpPage = () => {
   return (
-    <main className="auth-page py-4 sm:py-8">
+    <main className="auth-page py-6 sm:py-12">
         <SignUp />
     </main>
   )
