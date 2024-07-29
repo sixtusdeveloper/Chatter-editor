@@ -16,7 +16,7 @@ const Header = ({ children, className }: HeaderProps) => {
          />
 
          <Image 
-          src="/assets/images/logo.png"
+          src="/assets/images/logo-sm.png"
           alt="Logo on small screen"
           width={125}
           height={36}
