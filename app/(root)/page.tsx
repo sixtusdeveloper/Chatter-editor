@@ -10,6 +10,7 @@ import Link from 'next/link';
 import { dateConverter } from '@/lib/utils';
 import { DeleteModal } from '@/components/DeleteModal';
 import Notifications from '@/components/Notifications';
+import Footer from '@/components/Footer';
 
 const Home = async () => {
 
@@ -80,6 +81,7 @@ const Home = async () => {
           />
         </div>
       )}
+      <Footer />
     </main>
   )
 }
