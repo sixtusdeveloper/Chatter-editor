@@ -15,6 +15,8 @@ const Header = ({ children, className }: HeaderProps) => {
           className='hidden md:block'
          />
 
+         
+
          <Image 
           src="/assets/images/logo-sm.png"
           alt="Logo on small screen"
@@ -22,6 +24,12 @@ const Header = ({ children, className }: HeaderProps) => {
           height={20}
           className='mr-2 md:hidden'
          />
+       </Link>
+
+       <Link href="https://chatter-new-version.vercel.app/">
+        <a>
+          Home page
+        </a>
        </Link>
        {children}
     </div>
