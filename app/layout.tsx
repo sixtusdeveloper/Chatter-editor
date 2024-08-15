@@ -22,24 +22,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <ClerkProvider
     appearance={{
-      // baseTheme: dark,
       variables: { 
-        colorPrimary: "#3371FF", fontSize: '14px' ,
+        colorPrimary: "#3371FF", 
+        fontSize: '14px' 
       },
       elements: {
         button: {
-            padding: '10px 2px', 
-          },
-          formFieldInput: {
-            borderRadius: '6px !important',  
-            borderColor: '#333 !important',   
-            padding: '10px !important',       
-            backgroundColor: '#ffffff !important',
-            color: '#333 !important',        
-          },
+          padding: '10px 2px', 
+        },
+        formFieldInput: {
+          borderRadius: '6px !important',  
+          borderColor: '#333 !important',   
+          padding: '10px !important',       
+          backgroundColor: '#ffffff !important',
+          color: '#333 !important',        
+        },
       },
-
-     
     }}
     >
       <html lang="en" suppressHydrationWarning>
