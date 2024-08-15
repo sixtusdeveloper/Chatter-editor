@@ -10,7 +10,7 @@ const Header = ({ children, className }: HeaderProps) => {
          <Image 
           src="/assets/images/logo.png"
           alt="Logo on large screen"
-          width={130}
+          width={120}
           height={40}
           className='hidden md:block'
          />
@@ -18,7 +18,7 @@ const Header = ({ children, className }: HeaderProps) => {
          <Image 
           src="/assets/images/logo-sm.png"
           alt="Logo on small screen"
-          width={35}
+          width={32}
           height={20}
           className='mr-2 md:hidden'
          />
