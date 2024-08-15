@@ -19,7 +19,7 @@ const Home = async () => {
   const clerkUser = await currentUser();
   // When User is not signed in, redirect to sign-in page
   // if(!clerkUser) redirect('http://localhost:3000/sign-in');
-  if(!clerkUser) redirect('https://chatter-new-version.vercel.app/sign-in');
+  if(!clerkUser) redirect('/sign-in');
 
   const roomDocuments = await getDocuments(clerkUser.emailAddresses[0].emailAddress);  
 

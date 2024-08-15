@@ -11,7 +11,7 @@ const Document = async ({ params: { id } }: SearchParamProps) => {
   const clerkUsers = await currentUser();
 
   if(!clerkUsers) {
-    redirect('https://chatter-new-version.vercel.app/sigin-in');
+    redirect('/sign-in');
     // redirect('http://localhost:3000/sign-in');
   }
   
