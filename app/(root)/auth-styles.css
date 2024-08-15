@@ -1,0 +1,61 @@
+/* auth-styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .bg-grid {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px), 
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  .auth-page {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .spotlight {
+    animation: spotlightAnimation 3s infinite;
+  }
+
+  @keyframes spotlightAnimation {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .overflow-y-auto::-webkit-scrollbar {
+    display: none;
+  }
+
+  .overflow-y-auto {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  /* Prevent horizontal scrolling */
+  body, html {
+    overflow-x: hidden;
+    font-family: 'Merriweather', serif;
+  }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.button, .highlight {
+  font-family: 'Raleway', sans-serif;
+}

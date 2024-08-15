@@ -1,3 +1,5 @@
+'use server';
+
 import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
 import { SignedIn, UserButton } from '@clerk/nextjs';
@@ -16,7 +18,8 @@ const Home = async () => {
 
   const clerkUser = await currentUser();
   // When User is not signed in, redirect to sign-in page
-  if(!clerkUser) redirect('/sign-in');
+  // if(!clerkUser) redirect('http://localhost:3000/sign-in');
+  if(!clerkUser) redirect('https://chatter-new-version.vercel.app/sign-in');
 
   const roomDocuments = await getDocuments(clerkUser.emailAddresses[0].emailAddress);  
 
